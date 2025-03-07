@@ -25,8 +25,9 @@ jobs:
       - uses: leafo/gh-actions-luarocks@v4
 
       - name: dependencies
-        run: luarocks install luacheck
-        run: luarocks install laura
+        run:
+          - luarocks install luacheck
+          - luarocks install laura
 
       - name: test
         run: laura .
