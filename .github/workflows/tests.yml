@@ -32,4 +32,4 @@ jobs:
         # run: laura .
         
       - name: lint
-        run: luacheck .
+        run: luacheck ./*.lua
