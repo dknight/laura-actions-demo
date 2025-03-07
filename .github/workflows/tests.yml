@@ -21,11 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: leafo/gh-actions-lua@v11
+      - uses: leafo/gh-actions-lua@v9
       - uses: leafo/gh-actions-luarocks@v4
 
       - name: dependencies
-        run: luarocks install luacheck laura
+        run: luarocks --local install luacheck laura
 
       - name: test
         run: laura .
