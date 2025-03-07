@@ -1,0 +1,35 @@
+name: Tests
+on: [push]
+jobs:
+  test:
+    strategy:
+      matrix:
+        luaVersion: ['5.1', '5.2', '5.3', '5.4', 'luajit-2.1', 'luajit-openresty']
+    runs-on: ubuntu-latest
+    env:
+      TERM: xterm
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: leafo/gh-actions-lua@v11
+        with:
+          luaVersion: ${{ matrix.luaVersion }}
+  tests:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: leafo/gh-actions-lua@v9
+      - uses: leafo/gh-actions-luarocks@v4
+
+      - name: dependencies
+        run: luarocks install luacheck
+        # laura
+
+      # - name: test
+        # run: laura .
+        
+      - name: lint
+        run: luacheck .
