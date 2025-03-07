@@ -23,25 +23,7 @@ jobs:
         run: luarocks install laura
 
       - name: test
-        run: laura src/
+        run: laura test/
 
       - name: lint
-        run: luacheck src/*.lua
-
-
-  #   runs-on: ubuntu-20.04
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v4
-
-  #     - uses: leafo/gh-actions-lua@v9
-  #     - uses: leafo/gh-actions-luarocks@v4
-
-  #     - name: dependencies
-  #       run: luarocks install luacheck
-
-  #     - name: test
-  #       run: laura .
-
-  #     - name: lint
-  #       run: luacheck ./*.lua
+        run: luacheck *.lua
