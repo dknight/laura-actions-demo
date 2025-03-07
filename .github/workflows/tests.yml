@@ -15,7 +15,7 @@ jobs:
       - uses: leafo/gh-actions-lua@v11
         with:
           luaVersion: ${{ matrix.luaVersion }}
-  lint:
+  tests:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -29,6 +29,6 @@ jobs:
 
       - name: test
         run: laura .
-        
+
       - name: lint
         run: luacheck ./*.lua
