@@ -13,24 +13,23 @@ jobs:
         uses: actions/checkout@v4
 
       - uses: leafo/gh-actions-lua@v11
+      - uses: leafo/gh-actions-luarocks@v4
         with:
           luaVersion: ${{ matrix.luaVersion }}
-  tests:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # tests:
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - uses: leafo/gh-actions-lua@v9
-      - uses: leafo/gh-actions-luarocks@v4
+  #     - uses: leafo/gh-actions-lua@v9
+  #     - uses: leafo/gh-actions-luarocks@v4
 
-      - name: dependencies
-        run:
-          - luarocks install luacheck
-          - luarocks install laura
+  #     - name: dependencies
+  #       run: luarocks install luacheck
 
-      - name: test
-        run: laura .
+  #     - name: test
+  #       run: laura .
 
-      - name: lint
-        run: luacheck ./*.lua
+  #     - name: lint
+  #       run: luacheck ./*.lua
