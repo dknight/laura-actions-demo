@@ -16,7 +16,19 @@ jobs:
       - uses: leafo/gh-actions-luarocks@v4
         with:
           luaVersion: ${{ matrix.luaVersion }}
-  # tests:
+      - name: "install luacheck"
+        run: luarocks install luacheck
+
+      - name: "install laura"
+        run: luarocks install laura
+
+      - name: test
+        run: laura .
+
+      - name: lint
+        run: luacheck ./*.lua
+
+
   #   runs-on: ubuntu-20.04
   #   steps:
   #     - name: Checkout
