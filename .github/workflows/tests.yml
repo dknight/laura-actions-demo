@@ -19,14 +19,14 @@ jobs:
       - name: "install luacheck"
         run: luarocks install luacheck
 
-      # - name: "install laura"
-      #   run: luarocks install laura
+      - name: "install laura"
+        run: luarocks install laura
 
-      # - name: test
-      #   run: laura .
+      - name: test
+        run: laura src/
 
       - name: lint
-        run: luacheck ./*.lua
+        run: luacheck src/*.lua
 
 
   #   runs-on: ubuntu-20.04
