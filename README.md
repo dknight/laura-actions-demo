@@ -1,7 +1,7 @@
 # Demo of automation testing with Laura and Github Actions
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/dknight/laura/refs/heads/main/misc/laura-256.png" width="256" height="256" alt="Laura Testing Framework">
+<a href="https://github.com/dknight/laura"><img src="https://raw.githubusercontent.com/dknight/laura/refs/heads/main/misc/laura-256.png" width="256" height="256" alt="Laura Testing Framework"> </a>
 </div>
 
 <p align="center">
@@ -9,7 +9,7 @@
 <a href="https://github.com/dknight/laura-actions-demo/actions/workflows/tests.yml"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dknight/laura-actions-demo/tests.yml"></a></p>
 
 <p align="center">
-Laura 👧🏻 is a lightweight unit-testing framework for Lua with simplicity in mind.
+<a href="https://github.com/dknight/laura">Laura 👧🏻</a> is a lightweight unit-testing framework for Lua with simplicity in mind.
 The framework has no dependencies and is compatible with Lua versions 5.1&mdash;5.4 and LuaJIT.
 </p>
 
