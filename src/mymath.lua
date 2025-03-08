@@ -1,4 +1,4 @@
-local t = {
+local mymath = {
 	add = function(a, b)
 		return a + b
 	end,
@@ -13,4 +13,4 @@ local t = {
 	end,
 }
 
-return t
+return mymath
