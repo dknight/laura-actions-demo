@@ -5,10 +5,10 @@
 </div>
 
 <p align="center">
-<a href="https://github.com/dknight/laura-actions-demo/actions/workflows/tests.yml"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dknight/laura-actions-demo/tests.yml"></a></p>
+<a href="https://github.com/dknight/laura-actions-demo/actions/workflows/tests.yml" title="Tests"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/dknight/laura-actions-demo/tests.yml"></a></p>
 
 <p align="center">
-<a href="https://github.com/dknight/laura">Laura 👧🏻</a> is a lightweight unit-testing framework for Lua with simplicity in mind.
+<a href="https://github.com/dknight/laura">Laura</a> 👧🏻 is a lightweight unit-testing framework for Lua with simplicity in mind.
 The framework has no dependencies and is compatible with Lua versions 5.1&mdash;5.4 and LuaJIT.
 </p>
 
