@@ -28,6 +28,6 @@ jobs:
       - name: test
         run: laura test/ 
 
-      # Here you change spurce directory, if is different.
+      # Here you change source directory, if is different.
       - name: lint
         run: luacheck src/ test/
