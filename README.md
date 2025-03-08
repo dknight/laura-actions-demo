@@ -5,7 +5,6 @@
 </div>
 
 <p align="center">
-<img src="https://github.com/dknight/laura/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
 <a href="https://github.com/dknight/laura-actions-demo/actions/workflows/tests.yml"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dknight/laura-actions-demo/tests.yml"></a></p>
 
 <p align="center">
