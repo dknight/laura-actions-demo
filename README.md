@@ -29,4 +29,4 @@ across all Lua versions.
 - LuaJIT 2.1
 - LuaJIT-OpenResty
 
-Check [blog post](https://www.whoope.ee/post/laura-unit-testing-framework-for-lua.html) for the details.
+Check [blog post](https://www.whoop.ee/post/laura-unit-testing-framework-for-lua.html) for the details.
